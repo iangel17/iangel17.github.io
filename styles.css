@@ -1,0 +1,390 @@
+
+
+body {
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.hero {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #ff5252;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* NAVIGATION*/
+----------------------------------------
+
+nav {
+	background-color: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; /* = 1200px */
+	padding-top: 45px;
+}
+
+nav a {
+	color: #000000; /* white */
+	text-decoration: none;
+	padding: 10px 20px 15px 20px;
+}
+
+nav a:hover {
+	background-color: #356d81;
+}
+
+nav a:visited {
+	color: #ff0000;
+}
+
+nav ul {
+    display: flex; 
+    justify-content: space-between;
+	padding-left: 0;
+	list-style: none;
+    margin: 0;
+}
+
+/* About Preview */
+.about-preview {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-preview a {
+  color: #ff5252;
+  text-decoration: none;
+}
+
+/* Projects Section */
+h2 {
+text-align: center;
+margin-bottom: 20px
+}
+
+.project-row {
+display: flex;
+justify-content: space-between; /* even spacing */
+gap: 20px;
+flex-wrap: wrap; /* allows wrapping on smaller screens */
+max-width: 1000px;
+margin: auto;
+}
+
+.project {
+flex: 1;
+min-width: 250px;
+max-width: 300px;
+background-color: #eee;
+border-radius: 8px;
+padding: 10px;
+text-align: center;
+}
+
+.project img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 4px;
+}
+
+/* Skills Section */
+.skills {
+  background: linear-gradient(90deg, #a259ff 0%, #ffad8d 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-list li {
+  background: #ddd;
+color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* Contact Section */
+.contact-container {
+  max-width: 100%;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 32px auto;
+  padding: 0 16px;
+}
+
+.contact-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.email-line { 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+/* Form container */
+.form-gradient-bg { 
+  background: linear-gradient(90deg, #a259ff 0%, #ffad8d 100%); 
+  padding: 32px 24px; 
+  border-radius: 18px; 
+  margin: 40px auto 0 auto; 
+  max-width: 500px; 
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.form-gradient-bg { 
+  width: 100%; 
+}
+
+.form-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 32px;
+}
+
+form-inner { 
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 16px; 
+  box-shadow: 0 4px 2p4px rgba(0,0,0,0.10);
+  width: 100%;
+  max-width: 900px; 
+  margin: 0 auto; 
+}
+
+.form { 
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+.form div { 
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+button[type="submit"] { 
+   display: block;
+   margin: 10px auto;
+}
+
+/* portfolio */
+.projects-grid { 
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1300px;
+  margin: 40px auto; 
+  padding: 0 16px;
+}
+
+.project-item { 
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center; 
+  box-shadow: 0 20px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item img { 
+  display: block;
+  margin: 0 auto 12px auto;
+  max-width: 100%;
+  max-height: 220px;
+  width: auto;
+  height: auto; 
+  border-radius: 8px; 
+  object-fit: contain;
+}
+
+.project-item p { 
+  font-size: 1em; 
+  line-height: 1.6;
+  margin-top: 15px;
+  max-width: 90%;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.project-item h3 { 
+  font-size: 1.2em;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+}
+
+footer nav a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* about me */ 
+body {
+  font-family: 'Press Start 2P', system-ui;
+  background: #f4f7fa;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.about-me-container {
+  background:#fff;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  text-align: center;
+}
+
+.about-me-container:hover {
+  box-shadow: 0 8px 40px rgba(45,108,223,0.13);
+}
+
+about-me-container p {   
+  font-size: 1.1em;
+  line-height: 1.6; 
+  margin-bottom: 20px; 
+  color: #000
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #2d6cdf;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  color: #444;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+ul {
+  text-align: center;
+  margin: 18px auto 18px 30px;
+  padding-left: 0;
+  display: inline-block;
+  font-size: 1em;
+}
+
+li {
+  margin-bottom: 7px;
+  list-style: none;
+}
+
+a {
+  color: #2d6cdf;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1a418e;
+}
+
+strong {
+  color: #2d6cdf;
+}
+/* MEDIA QUERIES
+----------------------------------------
+*/
+@media (min-width: 600px) {
+    body { 
+    padding: 20px;
+    }
+    article { 
+    flex: 1 1 calc(50% - 10%); 
+    }
+    nav ul { 
+    justify-content: space-around;
+    gap: 20px; 
+    }
+}
+
+@media (min-width: 768px) { 
+    body {
+        padding: 30px; 
+    }
+    article { 
+        flex: 1 1 calc(33.33% - 10px);
+    }
+    nav ul { 
+    gap: 20px; 
+    }
+}
+
+@media (min-width: 992px) { 
+    main { 
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+}
