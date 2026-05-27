@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Press Start 2P', system-ui, sans-serif;
+  font-family: 'Playfair Display';
   background: #f4f7fa;
   color: #000;
   margin: 0;
@@ -36,7 +36,7 @@ main {
 }
 
 .home-hero {
-  background: linear-gradient(135deg, #111 0%, #2d0b59 55%, #ffad8d 100%);
+  background: linear-gradient(90deg, #1c5087 0%, #3ad277 100%, #635ef2 100%);
   min-height: 520px;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@ main {
 }
 
 .eyebrow {
-  color: #ffad8d;
+  color: #ffffff;
   font-size: 0.8rem;
   margin-bottom: 20px;
 }
@@ -136,12 +136,36 @@ nav a:hover {
 .project,
 .project-item,
 .about-me-container,
-.process-container,
-.form-gradient-bg {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+.process-container {
+
+    background: #fff;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+
+    padding: 40px;
+
+    min-height: 350px;
 }
+
+/* Contact form background */
+
+.form-gradient-bg {
+
+    background: linear-gradient(
+        135deg,
+        #1e5c96,
+        #3ddc84
+    );
+
+    color: white;
+
+    border-radius: 16px;
+
+    padding: 40px;
+}
+
 
 .feature-text {
   padding: 28px;
@@ -165,10 +189,12 @@ nav a:hover {
 
 /* About Preview */
 .about-preview {
-  text-align: center;
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 1.8;
 }
 
 /* Projects Section */
@@ -215,7 +241,7 @@ h3 {
 
 /* Skills Section */
 .skills {
-  background: linear-gradient(90deg, #a259ff 0%, #ffad8d 100%);
+  background: linear-gradient(90deg, #1c5087 0%, #3ad277 100%);
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -234,8 +260,8 @@ h3 {
 }
 
 .skills-list li {
-  background: #ddd;
-  color: #000;
+  background: #899ae3;
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 20px;
 }
@@ -265,10 +291,10 @@ h3 {
 
 /* Form container */
 .form-gradient-bg {
-  background: linear-gradient(90deg, #a259ff 0%, #ffad8d 100%);
-  padding: 32px 24px;
-  margin: 40px auto 0;
-  max-width: 560px;
+  background: linear-gradient( 135deg, #1e5c96, #3ddc84);
+    color: white;
+    border-radius: 16px;
+    padding: 40px;
 }
 
 .form {
@@ -439,4 +465,128 @@ strong {
   .contact-container p {
     font-size: 0.78rem;
   }
+}
+
+/* Featured project banner */
+
+.project-banner {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video background */
+
+.banner-video {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* Dark overlay */
+
+.project-banner::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Text content */
+
+.banner-content {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    max-width: 700px;
+
+    padding: 20px;
+}
+
+  .banner-content h2 {
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+
+    margin-bottom: 25px;
+
+    line-height: 1.6;
+}
+
+/* Button */
+
+.banner-button {
+    background-color: #ff4d5a;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+/* Card headings */
+
+.feature-text h2,
+.feature-cards h3 {
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+/* Card paragraph text */
+
+.feature-text p,
+.feature-cards p {
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+}
+
+/* Project card video */
+
+.project-video {
+    width: 100%;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    object-fit: cover;
 }
